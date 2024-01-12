@@ -6,9 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowLeft,
   faArrowRight,
-  faTimes,
-  faDownload,
-} from "@fortawesome/free-solid-svg-icons";
+  faTimes,} from "@fortawesome/free-solid-svg-icons";
 
 const Modal = () => {
   const { id } = useParams();
@@ -43,13 +41,6 @@ const Modal = () => {
     }, 500); // Adjust the delay as needed (should match the transition duration)
   };
 
-  const handleDownload = () => {
-    const currentImage = images[imageIndex];
-    const link = document.createElement("a");
-    link.href = currentImage.src;
-    link.download = currentImage.name;
-    link.click();
-  };
 
   return (
     <div className="modal-container">
@@ -66,9 +57,6 @@ const Modal = () => {
       <div className="navigation">
         <button className="prev" onClick={handlePrev}>
           <FontAwesomeIcon icon={faArrowLeft} />
-        </button>
-        <button className="download" onClick={handleDownload}>
-          <FontAwesomeIcon icon={faDownload} />
         </button>
         <button className="next" onClick={handleNext}>
           <FontAwesomeIcon icon={faArrowRight} />
