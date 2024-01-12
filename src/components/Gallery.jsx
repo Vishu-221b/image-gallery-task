@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom';
 import images from '../assets/imageutils.js';
 import './gallery.css';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft} from '@fortawesome/free-solid-svg-icons'; 
-
 const Gallery = () => {
    return(
 
