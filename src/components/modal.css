@@ -74,28 +74,62 @@
   color:rgb(0, 0, 0);
 }
 
+
+.download {
+  position: fixed;
+  bottom: 8%;
+  right: 20%; /* Center the button horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 1px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.download:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+
+
+
 /* Adjustments for Small Screens */
 @media screen and (max-width: 768px) {
   .modal img {
     max-width: 90vw;
     max-height: 90vh;
   }
+  .download {
+    bottom: 5%;
+    right: 10%;
+  }
 
-  .prev{
+.prev{
 left:20px;
 padding: 8px; 
-  }
-  .next{
+}
+
+.next{
 right:20px;
 padding: 8px; 
-  }
+}
+
   .close {
     font-size: 14px; 
     top: 10px;
     right: 10px;
     padding:20px;
   } 
+
+ 
 }
+
+
+
 
 /* Adjustments for Extra Small Screens (Mobile) */
 @media screen and (max-width: 480px) {
@@ -114,5 +148,10 @@ padding: 8px;
     right: 10px;
     padding:20px;
     
+  }
+
+  .download {
+    bottom: 15%;
+    right: 10%;
   }
 }

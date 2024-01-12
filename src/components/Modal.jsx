@@ -7,6 +7,7 @@ import {
   faArrowLeft,
   faArrowRight,
   faTimes,
+  faDownload,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Modal = () => {
@@ -22,7 +23,6 @@ const Modal = () => {
     setShowImage(true);
   }, []);
 
-  
   const handlePrev = () => {
     const newIndex = imageIndex > 0 ? imageIndex - 1 : images.length - 1;
     setShowImage(false); // Hide image before transitioning to the next one
@@ -32,7 +32,7 @@ const Modal = () => {
       setShowImage(true); // Show the next image after a delay
     }, 500); // Adjust the delay as needed (should match the transition duration)
   };
-  
+
   const handleNext = () => {
     const newIndex = imageIndex < images.length - 1 ? imageIndex + 1 : 0;
     setShowImage(false); // Hide image before transitioning to the next one
@@ -42,7 +42,14 @@ const Modal = () => {
       setShowImage(true); // Show the next image after a delay
     }, 500); // Adjust the delay as needed (should match the transition duration)
   };
-  
+
+  const handleDownload = () => {
+    const currentImage = images[imageIndex];
+    const link = document.createElement("a");
+    link.href = currentImage.src;
+    link.download = currentImage.name;
+    link.click();
+  };
 
   return (
     <div className="modal-container">
@@ -55,10 +62,13 @@ const Modal = () => {
         />
       </div>
 
-      {/* Navigation controls and close button */}
+      {/* Navigation controls, download button, and close button */}
       <div className="navigation">
         <button className="prev" onClick={handlePrev}>
           <FontAwesomeIcon icon={faArrowLeft} />
+        </button>
+        <button className="download" onClick={handleDownload}>
+          <FontAwesomeIcon icon={faDownload} />
         </button>
         <button className="next" onClick={handleNext}>
           <FontAwesomeIcon icon={faArrowRight} />
