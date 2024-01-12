@@ -29,6 +29,7 @@
   display: block;
   max-width: 60vw;
   max-height:90vh;
+  min-width:60vw;
   height: auto; /* Maintain aspect ratio */
   border-radius: 8px; /* Optional: add rounded corners to images */
 }
@@ -53,10 +54,16 @@
   margin-top: 20px;
   border: none;
   border-radius: 1px;
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+
+
+
+
+.close:hover , .prev:hover , .next:hover{
+  background-color: #ffffff; 
+  color:rgb(0, 0, 0);
 }
 
 /* Adjustments for Small Screens */

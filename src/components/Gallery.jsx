@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import images from '../assets/imageutils.js';
-import './gallery.css'; 
+import './gallery.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft} from '@fortawesome/free-solid-svg-icons'; 
 
 const Gallery = () => {
    return(
@@ -9,12 +11,22 @@ const Gallery = () => {
     <div className="gallery-container">
         
         <div className="text-container">
+            <div className="text">
+            <h1>Welcome to the Pinak Gallery</h1>
+            <p>Our gallery showcases a diverse collection of projects that we've worked on.
+                Each project is a testament to our commitment to quality and innovation. We invite you to explore our work and gain insights into our capabilities and expertise.
+                Enjoy your journey through our creative endeavors.
+            </p></div>
 
-        <h1>Hi, I am Gallery</h1>
-        <Link to="/">
-            <button>return home</button>
-        </Link>
+            <div className="link">
+              <Link to="/">
+                <button><FontAwesomeIcon icon={faArrowLeft} />  return home</button>
+              </Link>
+           </div>
+            
         </div>
+
+        
         
 
         <div className="image-grid">
