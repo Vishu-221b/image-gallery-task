@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './components/Home'
 import Gallery from './components/Gallery'
 import Modal from './components/Modal'
-import './App.css'
+
 
 function App() {
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import images from '../assets/imageutils.js';
-import './gallery.css';
+import './gallery.css'; 
 
 const Gallery = () => {
    return(
