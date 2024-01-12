@@ -32,16 +32,19 @@ const Modal = () => {
 
              {/* Image display section */}
             <div className="modal">
-            <img src={images[imageIndex].src} alt={images[imageIndex].name} />
-            <h2>{images[imageIndex].name}</h2>
+
+               <img src={images[imageIndex].src} alt={images[imageIndex].name} />
+               {/* <h2>{images[imageIndex].name}</h2> */}
+
             </div>
             
             {/* Navigation controls and close button */}
             <div className="navigation">
-                <button onClick={handlePrev}>Previous</button>
-                
-                <Link to="/gallery"><button>Close</button></Link>
-                <button onClick={handleNext}>Next</button>
+
+                <button className="prev" onClick={handlePrev}>Previous</button>
+                <Link to="/gallery"><button className="close">Close</button></Link>
+                <button className="next" onClick={handleNext}>Next</button>
+
             </div>
             
         </div>

@@ -1,0 +1,89 @@
+/* modal.css */
+
+/* Modal Container */
+.modal-container {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left:150px;
+  padding-right:150px;
+  padding-top: 50px;
+}
+
+/* Modal Content */
+.modal {
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8); 
+}
+
+/* Image */
+.modal img {
+  display: block;
+  max-width: 60vw;
+  max-height:90vh;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: add rounded corners to images */
+}
+
+.prev{
+  position:fixed;
+  top:45%;
+  left:150px;
+}
+
+.next{
+  position:fixed;
+  top:45%;
+  right:150px;
+}
+
+.close{
+  position:fixed;
+  top:50px;
+  right:100px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 1px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Adjustments for Small Screens */
+@media screen and (max-width: 768px) {
+  .modal img {
+    max-width: 90vw;
+    max-height: 90vh;
+  }
+
+  .prev,
+  .next,
+  .close {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+
+/* Adjustments for Extra Small Screens (Mobile) */
+@media screen and (max-width: 480px) {
+  .prev,
+  .next {
+    padding: 8px; /* Further adjust padding for smaller screens */
+  }
+
+  .close {
+    top: 10px;
+    right: 10px;
+    padding: 8px; /* Further adjust padding for smaller screens */
+  }
+}
