@@ -26,6 +26,7 @@ p {
     height: 100vh;
     padding-left: 150px;
     padding-right: 150px;
+    
 }
 
 .text-content {
@@ -76,6 +77,8 @@ img {
     img {
         max-width: 100%;
         height: auto;
+        padding-top: 15px;
+        padding-bottom:50px;
     }
 }
 
@@ -85,6 +88,7 @@ img {
         flex-direction: column;
         padding: 20px;
     }
+    
 
     .text-content, img {
         max-width: 100%;
@@ -95,6 +99,8 @@ img {
     img {
         max-width: 100%;
         height: auto;
+        padding-top: 15px;
+        padding-bottom:50px;
     }
 }
 

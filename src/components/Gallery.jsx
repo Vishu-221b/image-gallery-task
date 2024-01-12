@@ -9,7 +9,7 @@ import { faArrowLeft} from '@fortawesome/free-solid-svg-icons';
 const Gallery = () => {
    return(
 
-    <div className="gallery-container fade-enter">
+    <div className="gallery-container">
         
         <div className="text-container">
             <div className="text">
