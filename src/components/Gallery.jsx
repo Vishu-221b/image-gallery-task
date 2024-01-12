@@ -12,18 +12,17 @@ const Gallery = () => {
     <div className="gallery-container">
         
         <div className="text-container">
+        <div className="link">
+              <Link to="/">
+                <button>Home</button>
+              </Link>
+           </div>
             <div className="text">
             <h1>Welcome to the Pinak Gallery</h1>
             <p>Our gallery showcases a diverse collection of projects that we've worked on.
                 Each project is a testament to our commitment to quality and innovation. We invite you to explore our work and gain insights into our capabilities and expertise.
                 Enjoy your journey through our creative endeavors.
             </p></div>
-
-            <div className="link">
-              <Link to="/">
-                <button><FontAwesomeIcon icon={faArrowLeft} />  return home</button>
-              </Link>
-           </div>
             
         </div>
 
@@ -42,7 +41,9 @@ const Gallery = () => {
                 </Link>
             )
         })}
+        <h3>The End.</h3>
         </div>
+        
 
     </div>
 
