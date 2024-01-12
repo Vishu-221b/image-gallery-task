@@ -1,6 +1,6 @@
-/* modal.css */
 
-/* Modal Container */
+
+
 .modal-container {
   display:flex;
   flex-direction: column;
@@ -11,7 +11,7 @@
   padding-top: 50px;
 }
 
-/* Modal Content */
+
 .modal {
   position:fixed;
   top: 0;
@@ -24,15 +24,23 @@
   background-color: rgba(0, 0, 0, 0.8); 
 }
 
-/* Image */
+/* Add a new class for the transition effect */
+.modal img.transition {
+  opacity: 1;
+}
+
+/* Modify the transition property to include opacity */
 .modal img {
   display: block;
   max-width: 60vw;
-  max-height:90vh;
-  min-width:60vw;
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 8px; /* Optional: add rounded corners to images */
+  max-height: 90vh;
+  min-width: 60vw;
+  height: auto;
+  border-radius: 8px;
+  opacity: 0; /* Initially set opacity to 0 */
+  transition: opacity 0.5s ease-in-out;
 }
+
 
 .prev{
   position:fixed;
@@ -55,7 +63,7 @@
   border: none;
   border-radius: 1px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 

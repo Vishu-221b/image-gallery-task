@@ -40,7 +40,7 @@ import dark from './images/dark.jpg';
         { src: night, name: 'night', id: 16},
         { src: painting, name: 'painting', id: 17},
         
-        { src: dark, name: 'dark', id: 21 }, // Added the corrected image
+        { src: dark, name: 'dark', id: 21 }, 
         
        
         { src: fog, name: 'fog', id: 3 },
