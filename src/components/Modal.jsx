@@ -2,6 +2,8 @@ import React, {useState} from "react";
 import {Link, useParams, useNavigate} from "react-router-dom";
 import images from "../assets/imageutils.js";
 import "./modal.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft, faArrowRight, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const Modal = () => {
 
@@ -34,16 +36,17 @@ const Modal = () => {
             <div className="modal">
 
                <img src={images[imageIndex].src} alt={images[imageIndex].name} />
-               {/* <h2>{images[imageIndex].name}</h2> */}
+               
 
             </div>
             
             {/* Navigation controls and close button */}
             <div className="navigation">
 
-                <button className="prev" onClick={handlePrev}>Previous</button>
-                <Link to="/gallery"><button className="close">Close</button></Link>
-                <button className="next" onClick={handleNext}>Next</button>
+                <button className="prev" onClick={handlePrev}><FontAwesomeIcon icon={faArrowLeft} /></button>
+                <button className="next" onClick={handleNext}><FontAwesomeIcon icon={faArrowRight} /></button>
+                <Link to="/gallery"><button className="close"><FontAwesomeIcon icon={faTimes} /></button></Link>
+                
 
             </div>
             
