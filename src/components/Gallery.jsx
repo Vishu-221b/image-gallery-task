@@ -10,7 +10,7 @@ const Gallery = () => {
         
         <div className="text-container">
 
-        Hi, I am Gallery
+        <h1>Hi, I am Gallery</h1>
         <Link to="/">
             <button>return home</button>
         </Link>

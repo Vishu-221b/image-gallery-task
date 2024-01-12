@@ -66,24 +66,38 @@
     max-height: 90vh;
   }
 
-  .prev,
-  .next,
-  .close {
-    font-size: 14px; /* Adjust font size for smaller screens */
-    padding: 10px; /* Adjust padding for smaller screens */
+  .prev{
+left:20px;
+padding: 8px; 
   }
+  .next{
+right:20px;
+padding: 8px; 
+  }
+  .close {
+    font-size: 14px; 
+    top: 10px;
+    right: 10px;
+    padding:20px;
+  } 
 }
 
 /* Adjustments for Extra Small Screens (Mobile) */
 @media screen and (max-width: 480px) {
-  .prev,
+  .prev{
+    left:10px;
+    padding: 8px; 
+  }
   .next {
-    padding: 8px; /* Further adjust padding for smaller screens */
+    right:10px;
+    padding: 8px; 
   }
 
   .close {
+    font-size: 14px; 
     top: 10px;
     right: 10px;
-    padding: 8px; /* Further adjust padding for smaller screens */
+    padding:20px;
+    
   }
 }
