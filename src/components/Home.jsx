@@ -9,7 +9,7 @@ const Home = ()  => {
         <div className="hero">
         
        <div className="text-content">
-            <h1>Image Gallery</h1>
+            <h1>Pinak Image Gallery</h1>
             <p>Explore our collection of beautiful and high-quality images. From stunning landscapes and cute animals to inspiring cityscapes and more, there's something for everyone in our gallery.</p>
 
              <Link to="/gallery">
