@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import { Link } from 'react-router-dom';
 import images from '../assets/imageutils.js';
 import './gallery.css'; 
@@ -7,10 +7,15 @@ const Gallery = () => {
    return(
 
     <div className="gallery-container">
+        
+        <div className="text-container">
+
         Hi, I am Gallery
         <Link to="/">
             <button>return home</button>
         </Link>
+        </div>
+        
 
         <div className="image-grid">
         {images.map((image, index) => {
@@ -19,7 +24,7 @@ const Gallery = () => {
                 <div >
 
                     <img src={image.src} alt="sorry" />
-                    <h2>{image.name}</h2>
+                    
                 </div>
                 </Link>
             )
