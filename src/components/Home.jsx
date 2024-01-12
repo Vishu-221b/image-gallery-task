@@ -6,7 +6,7 @@ import painting from '../assets/images/painting.jpg';
 const Home = ()  => {
     return (
 
-        <div className="hero">
+        <div className="hero fade-enter">
         
        <div className="text-content">
             <h1>Pinak Image Gallery</h1>

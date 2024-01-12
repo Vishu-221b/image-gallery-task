@@ -2,13 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import images from '../assets/imageutils.js';
 import './gallery.css';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft} from '@fortawesome/free-solid-svg-icons'; 
 
 const Gallery = () => {
    return(
 
-    <div className="gallery-container">
+    <div className="gallery-container fade-enter">
         
         <div className="text-container">
             <div className="text">
