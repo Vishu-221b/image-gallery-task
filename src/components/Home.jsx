@@ -1,18 +1,27 @@
 import React from "react";
 import { Link } from  'react-router-dom';
 import './home.css';
+import painting from '../assets/images/painting.jpg';
 
 const Home = ()  => {
     return (
-        <div>
-            
-          <h1>Image Gallery</h1>
 
-          <Link to="/gallery">
-              <button>View Gallery</button>
-          </Link>
+        <div className="hero">
+        
+       <div className="text-content">
+            <h1>Image Gallery</h1>
+            <p>Explore our collection of beautiful and high-quality images. From stunning landscapes and cute animals to inspiring cityscapes and more, there's something for everyone in our gallery.</p>
 
-        </div>  
+             <Link to="/gallery">
+             <button>View Gallery</button>
+             </Link>
+        </div>
+
+            <img src={painting} alt="Description of the image" />
+        
+
+        </div>
+               
     )
 }
 
